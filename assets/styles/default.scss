@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    background-image: url('https://cdn.discordapp.com/attachments/1034728630888177716/1290748590813220989/Kepernyokep_2024-10-01_204525.png?ex=673252cc&is=6731014c&hm=caf25bfd7007e7fd2dc4a565237591a14d502904390dc931da40698bfe72cec0&');
+}

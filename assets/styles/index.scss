@@ -1,0 +1,121 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 75em;
+}
+
+.auth-panel {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.panel {
+  background-color: #ffffff;
+  border-radius: 0.75em;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.15);
+  padding: 1.5em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 19em;
+  box-sizing: border-box;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.panel:hover {
+  transform: translateY(-0.2em);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+}
+
+.balance h3 {
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  text-align: center;
+  color: #333333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #f9fafb;
+  border: 0.0625em solid #e5e7eb;
+  border-radius: 0.5em;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+}
+
+p, input {
+  font-size: 1em;
+  color: #444444;
+  margin: 0.5em 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 0.5em;
+  border: 0.0625em solid #d1d5db;
+  border-radius: 0.375em;
+  box-sizing: border-box;
+  font-size: 1em;
+  color: #333333;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+button {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 0.75em 1em;
+  border-radius: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+  transform: translateY(-0.1em);
+}
+
+button:active {
+  background-color: #1d4ed8;
+  transform: translateY(0);
+}
+
+strong {
+  font-weight: 600;
+}
+
+strong::after {
+  content: " ";
+}

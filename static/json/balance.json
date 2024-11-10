@@ -1,0 +1,13 @@
+{
+  "money": 22377008,
+  "previousMoney": 22377008,
+  "transactions": [
+    {
+      "id": 1,
+      "date": "2024-11-10",
+      "amount": 22377008,
+      "previousAmount": 22377008,
+      "description": "Alapból ennyi volt"
+    }
+  ]
+}

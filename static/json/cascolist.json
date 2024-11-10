@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "companyName": "FastCar Service",
+    "password": "FELNI",
+    "expirationDate": "2025-01-01"
+  },
+  {
+    "id": 2,
+    "companyName": "Mad Max Garage",
+    "password": "FELNI",
+    "expirationDate": "2024-11-20"
+  },
+  {
+    "id": 3,
+    "companyName": "Top Gear Service",
+    "password": "FELNI",
+    "expirationDate": "2024-12-03"
+  }
+]
