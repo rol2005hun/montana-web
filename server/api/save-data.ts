@@ -13,7 +13,22 @@ export default defineEventHandler(async (event) => {
     fs.writeFileSync(FILE_PATH_MEMBERS, JSON.stringify(body.members, null, 2));
     fs.writeFileSync(FILE_PATH_CASCO, JSON.stringify(body.cascolist, null, 2));
 
-    return { message: 'Adatok sikeresen elmentve' };
+    // Clear require cache
+    delete require.cache[require.resolve(FILE_PATH_BALANCE)];
+    delete require.cache[require.resolve(FILE_PATH_MEMBERS)];
+    delete require.cache[require.resolve(FILE_PATH_CASCO)];
+
+    // Re-read the files
+    const updatedBalance = JSON.parse(fs.readFileSync(FILE_PATH_BALANCE, 'utf-8'));
+    const updatedMembers = JSON.parse(fs.readFileSync(FILE_PATH_MEMBERS, 'utf-8'));
+    const updatedCasco = JSON.parse(fs.readFileSync(FILE_PATH_CASCO, 'utf-8'));
+
+    return { 
+      message: 'Adatok sikeresen elmentve', 
+      updatedBalance, 
+      updatedMembers, 
+      updatedCasco 
+    };
   } catch (error) {
     return { error: 'Hiba történt az adatok mentésekor', details: (error as Error).message };
   }

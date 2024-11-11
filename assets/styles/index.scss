@@ -13,7 +13,6 @@
   gap: 1.5em;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 75em;
 }
 
 .auth-panel {
@@ -69,10 +68,7 @@ p, input {
   margin: 0.5em 0;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="password"],
-input[type="date"] {
+input {
   width: 100%;
   padding: 0.5em;
   border: 0.0625em solid #d1d5db;
@@ -83,10 +79,7 @@ input[type="date"] {
   transition: border-color 0.2s ease;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus {
+input:focus {
   border-color: #3b82f6;
   outline: none;
 }
